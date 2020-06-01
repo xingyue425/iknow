@@ -1,0 +1,4 @@
+1.定义了一个自定义注解LoggerName,用于标识该类使用哪个日志
+2.增加了一个拦截器,用来处理发送进来的web请求，主动添加日志注解  需要配合InterceptorConfiguration使用
+3.LogFileName用来标识都提供了那些日志
+4.LogUtil用来从上下文获取当前的日志线程
