@@ -9,6 +9,7 @@
         <module name="core-spring-boot-starter" />
         <module name="knowaop" />
         <module name="knowdatasource" />
+        <module name="knowlotteryrule" />
         <module name="knowprop" />
         <module name="knowstartspringbootstarter" />
         <module name="knowtest" />
@@ -19,6 +20,7 @@
       <module name="core-spring-boot-starter" target="1.7" />
       <module name="knowaop" target="1.7" />
       <module name="knowdatasource" target="1.7" />
+      <module name="knowlotteryrule" target="1.7" />
       <module name="knowprop" target="1.7" />
       <module name="knowstartspringbootstarter" target="1.7" />
       <module name="knowtest" target="1.7" />
