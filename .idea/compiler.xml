@@ -7,6 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="core-spring-boot-starter" />
+        <module name="know-atomikos" />
+        <module name="know-object-pool" />
+        <module name="know-register-db" />
         <module name="knowaop" />
         <module name="knowdatasource" />
         <module name="knowlotteryrule" />
@@ -18,6 +21,9 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="core-spring-boot-starter" target="1.7" />
+      <module name="know-atomikos" target="1.7" />
+      <module name="know-object-pool" target="1.7" />
+      <module name="know-register-db" target="1.7" />
       <module name="knowaop" target="1.7" />
       <module name="knowdatasource" target="1.7" />
       <module name="knowlotteryrule" target="1.7" />
