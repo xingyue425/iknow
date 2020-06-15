@@ -4,6 +4,8 @@ import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.core.Ordered;
 import org.springframework.stereotype.Component;
 
@@ -11,9 +13,11 @@ import org.springframework.stereotype.Component;
 @Aspect
 public class MultipleDataSourceAspectAdvice implements Ordered {
 
+    private static Logger logger= LoggerFactory.getLogger(MultipleDataSourceAspectAdvice.class);
+
     @Before("execution(* com..mapper..*.*(..))")
     public void changeDataSource(JoinPoint point) throws Throwable {
-        String environmentCode = SessionUtil.getSessionAttr(SessionUtil.ENVIRONMENT_CODE,"dev").toString();
+        String environmentCode = "main";
         logger.info("Use DataSource : "+ environmentCode+"-"+ point.getSignature());
         DynamicDataSourceContextHolder.setDataSourceType(environmentCode);
     }
@@ -30,7 +34,7 @@ public class MultipleDataSourceAspectAdvice implements Ordered {
     }
     @Before("execution(* com..service..*.*(..))")
     public void switchDataSource(JoinPoint point) throws Throwable {
-        String environmentCode = SessionUtil.getSessionAttr(SessionUtil.ENVIRONMENT_CODE,"dev").toString();
+        String environmentCode = "main";
         logger.info("Use DataSource : "+ environmentCode+"-"+ point.getSignature());
         DynamicDataSourceContextHolder.setDataSourceType(environmentCode);
     }
