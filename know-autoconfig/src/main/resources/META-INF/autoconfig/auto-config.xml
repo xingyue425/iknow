@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <group>
+        <property name="server.port" defaultValue="9990" description="web项目端口号"/>
+    </group>
+    <script>
+        <generate template="application.properties.vm" destfile="WEB-INF/classes/application.properties" charset="utf-8"/>
+        <generate template="application.properties.vm" destfile="BOOT-INF/classes/application.properties" charset="utf-8"/>
+    </script>
+</config>

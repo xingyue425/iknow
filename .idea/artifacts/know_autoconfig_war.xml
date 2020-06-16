@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="know-autoconfig:war">
+    <output-path>$PROJECT_DIR$/know-autoconfig/target</output-path>
+    <root id="archive" name="know-autoconfig-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="know-autoconfig:war exploded" />
+    </root>
+  </artifact>
+</component>

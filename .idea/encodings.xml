@@ -3,6 +3,8 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/core-spring-boot-starter" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/know-atomikos" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/know-autoconfig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/know-autoconfig-war" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/know-object-pool" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/know-register-db" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/knowaop" charset="UTF-8" />
