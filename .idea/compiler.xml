@@ -19,6 +19,7 @@
         <module name="knowstartspringbootstarter" />
         <module name="knowtest" />
         <module name="knowwebparam" />
+        <module name="mybatis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -29,12 +30,13 @@
       <module name="know-object-pool" target="1.7" />
       <module name="know-register-db" target="1.7" />
       <module name="knowaop" target="1.7" />
-      <module name="knowdatasource" target="1.7" />
+      <module name="knowdatasource" target="8" />
       <module name="knowlotteryrule" target="1.7" />
       <module name="knowprop" target="1.7" />
       <module name="knowstartspringbootstarter" target="1.7" />
       <module name="knowtest" target="1.7" />
       <module name="knowwebparam" target="1.7" />
+      <module name="mybatis" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

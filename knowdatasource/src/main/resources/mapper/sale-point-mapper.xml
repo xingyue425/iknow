@@ -9,5 +9,9 @@
         FROM sale_point t
         WHERE t.id=#{id}
     </select>
+    <select id="findSalePointList" resultType="salePoint">
+        SELECT id,db_name,ip,port,user_name,password,driver_class_name,db_key
+        FROM sale_point t
+    </select>
 
 </mapper>

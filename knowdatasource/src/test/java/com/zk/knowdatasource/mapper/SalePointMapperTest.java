@@ -1,11 +1,14 @@
 package com.zk.knowdatasource.mapper;
 
 import com.zk.knowdatasource.pojo.SalePoint;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+
+import java.util.List;
 
 @SpringBootTest
 @RunWith(SpringRunner.class)
@@ -26,5 +29,11 @@ public class SalePointMapperTest {
         System.out.println(salePoint.getPassword());
         System.out.println(salePoint.getUserName());
         System.out.println(salePoint.getPort());
+    }
+    @Test
+    public void findSalePointList(){
+
+        List<SalePoint> list=salePointMapper.findSalePointList();
+        Assert.assertEquals(list.size(),2);
     }
 }
