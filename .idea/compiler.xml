@@ -10,6 +10,7 @@
         <module name="know-atomikos" />
         <module name="know-autoconfig" />
         <module name="know-autoconfig-war" />
+        <module name="know-lift" />
         <module name="know-object-pool" />
         <module name="know-register-db" />
         <module name="knowaop" />
@@ -27,10 +28,11 @@
       <module name="know-atomikos" target="1.7" />
       <module name="know-autoconfig" target="1.7" />
       <module name="know-autoconfig-war" target="1.7" />
+      <module name="know-lift" target="1.7" />
       <module name="know-object-pool" target="1.7" />
       <module name="know-register-db" target="1.7" />
       <module name="knowaop" target="1.7" />
-      <module name="knowdatasource" target="8" />
+      <module name="knowdatasource" target="1.7" />
       <module name="knowlotteryrule" target="1.7" />
       <module name="knowprop" target="1.7" />
       <module name="knowstartspringbootstarter" target="1.7" />
