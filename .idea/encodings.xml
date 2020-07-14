@@ -7,6 +7,8 @@
     <file url="file://$PROJECT_DIR$/know-autoconfig-war" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/know-lift" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/know-object-pool" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/know-rabbitmq" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/know-redis" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/know-register-db" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/knowaop" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/knowdatasource" charset="UTF-8" />

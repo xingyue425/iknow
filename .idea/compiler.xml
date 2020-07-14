@@ -12,6 +12,8 @@
         <module name="know-autoconfig-war" />
         <module name="know-lift" />
         <module name="know-object-pool" />
+        <module name="know-rabbitmq" />
+        <module name="know-redis" />
         <module name="know-register-db" />
         <module name="knowaop" />
         <module name="knowdatasource" />
@@ -30,6 +32,8 @@
       <module name="know-autoconfig-war" target="1.7" />
       <module name="know-lift" target="1.7" />
       <module name="know-object-pool" target="1.7" />
+      <module name="know-rabbitmq" target="1.8" />
+      <module name="know-redis" target="1.8" />
       <module name="know-register-db" target="1.7" />
       <module name="knowaop" target="1.7" />
       <module name="knowdatasource" target="1.7" />
