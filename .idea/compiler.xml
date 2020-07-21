@@ -15,6 +15,7 @@
         <module name="know-rabbitmq" />
         <module name="know-redis" />
         <module name="know-register-db" />
+        <module name="know-sentinel" />
         <module name="knowaop" />
         <module name="knowdatasource" />
         <module name="knowlotteryrule" />
@@ -26,23 +27,24 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="core-spring-boot-starter" target="1.7" />
-      <module name="know-atomikos" target="1.7" />
-      <module name="know-autoconfig" target="1.7" />
-      <module name="know-autoconfig-war" target="1.7" />
-      <module name="know-lift" target="1.7" />
-      <module name="know-object-pool" target="1.7" />
+      <module name="core-spring-boot-starter" target="1.8" />
+      <module name="know-atomikos" target="1.8" />
+      <module name="know-autoconfig" target="1.8" />
+      <module name="know-autoconfig-war" target="1.8" />
+      <module name="know-lift" target="1.8" />
+      <module name="know-object-pool" target="1.8" />
       <module name="know-rabbitmq" target="1.8" />
       <module name="know-redis" target="1.8" />
-      <module name="know-register-db" target="1.7" />
-      <module name="knowaop" target="1.7" />
-      <module name="knowdatasource" target="1.7" />
-      <module name="knowlotteryrule" target="1.7" />
-      <module name="knowprop" target="1.7" />
-      <module name="knowstartspringbootstarter" target="1.7" />
-      <module name="knowtest" target="1.7" />
-      <module name="knowwebparam" target="1.7" />
-      <module name="mybatis" target="1.7" />
+      <module name="know-register-db" target="1.8" />
+      <module name="know-sentinel" target="1.8" />
+      <module name="knowaop" target="1.8" />
+      <module name="knowdatasource" target="1.8" />
+      <module name="knowlotteryrule" target="1.8" />
+      <module name="knowprop" target="1.8" />
+      <module name="knowstartspringbootstarter" target="1.8" />
+      <module name="knowtest" target="1.8" />
+      <module name="knowwebparam" target="1.8" />
+      <module name="mybatis" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

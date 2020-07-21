@@ -1,25 +1,37 @@
 package com.zk.knowobjectpool.config.sftp;
 
 import com.jcraft.jsch.ChannelSftp;
-import org.apache.commons.pool2.PooledObjectFactory;
-import org.apache.commons.pool2.impl.GenericKeyedObjectPool;
 import org.apache.commons.pool2.impl.GenericObjectPool;
-import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 
-public class SftpPool  extends GenericKeyedObjectPool<String,ChannelSftp> {
+public class SftpPool {
 
-    public SftpPool(PooledObjectFactory factory, GenericObjectPoolConfig config) {
-        super(factory,config);
+    private GenericObjectPool<ChannelSftp> pool;
+
+    public SftpPool(SftpFactory factory) {
+        this.pool = new GenericObjectPool<>(factory, factory.getProperties().getPool());
     }
 
-    @Override
-    public ChannelSftp borrowObject() throws Exception {
-        return super.borrowObject();
+    /**
+     * 获取一个sftp连接对象
+     * @return sftp连接对象
+     */
+    public ChannelSftp borrowObject() {
+        try {
+            return pool.borrowObject();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 
-    @Override
-    public void returnObject(ChannelSftp obj) {
-        super.returnObject(obj);
+    /**
+     * 归还一个sftp连接对象
+     * @param channelSftp sftp连接对象
+     */
+    public void returnObject(ChannelSftp channelSftp) {
+        if (channelSftp!=null) {
+            pool.returnObject(channelSftp);
+        }
     }
-    //还包含其他的一些操作
+
 }
